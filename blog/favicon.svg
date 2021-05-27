@@ -1,0 +1,16 @@
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg" class="icon">
+ <defs>
+  <style type="text/css"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="258" height="258" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse fill="none" stroke-width="null" cx="128" cy="128" id="svg_4" rx="128" ry="128"/>
+  <line fill="none" stroke-width="8" x1="83.5" y1="43.453125" x2="173.926766" y2="43.453125" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="#ffffff" stroke-width="null" x1="31.5" y1="114.453125" x2="241.361859" y2="114.453125" id="svg_3" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <text font-weight="bold" stroke="#02d7f2" transform="matrix(11.402825319297788,0,0,11.402825319297788,-634.2075786082216,-997.8190635416619) " xml:space="preserve" text-anchor="start" font-family="Oswald, sans-serif" font-size="20" id="svg_1" y="105.922938" x="59.286134" stroke-opacity="null" stroke-width="0" fill="#02d7f2">G</text>
+ </g>
+</svg>
