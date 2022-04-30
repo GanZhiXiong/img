@@ -1,3 +1,35 @@
+
+
+## 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。
+
+![](https://ppoffice.github.io/hexo-theme-icarus/gallery/screenshots/disqus-get-shortname.png)
+
+在添加 Data Sources 界面，驱动选择 Microsoft SQL Server，输入连接配置信息后，点击 `Test Connection`，报错如下：
+
+```basic
+[08S01] 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target”。 ClientConnectionId:16497bc5-424b-4395-ac01-e2439eb66a14 unable to find valid certification path to requested target.
+```
+
+该问题一般是驱动的问题，我这里换成 9.4.0 的版本就没有问题了。
+
+![](https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202204221221714.png)
+
+## Inconsistent language: It is recommended to use Azure SQL Database dialect instead of Microsoft SQL Server Use Azure SQL Database
+
+![](https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202204221224784.png)
+
+翻来过来就是：
+
+> 语言不一致：建议使用 Azure SQL 数据库方言，而不是 Microsoft SQL Server 使用 Azure SQL 数据库
+
+我将 Driver 选择 Azure SQL Database，尝试了改驱动的前四个版本，都会报如下错误。
+
+```basic
+[08S01] 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target”。 ClientConnectionId:f71345e9-2855-4fd3-b8b7-57f0a62a9f1e unable to find valid certification path to requested target.
+```
+
+估计还是驱动问题。这个问题就先放着，反正用 Microsoft SQL Server 驱动能用。
+
 # img
 ## img
 ### img
